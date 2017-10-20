@@ -28,10 +28,10 @@ sip==4.19.3
 six==1.11.0  
 >urllib3==1.22  
 
-2. 修正过的qtpandas
-qtpandas在github上的最新版本代码有问题，需要修正  
+2. 修正过的qtpandas  
+>qtpandas在github上的最新版本代码有问题，需要修正  
 请下载本项目下修正过的qtpandas代码安装  
-对应目录：qtpandas_1.0.4_v2
+>对应目录：qtpandas_1.0.4_v2
 
 ## 3.使用说明
 1.执行 python main.py，程序启动界面如下  
