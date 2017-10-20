@@ -7,7 +7,7 @@
 
 **2.Requirements**  
 
-(1)
+(1)requirements.txt  
 certifi==2017.7.27.1  
 chardet==3.0.4  
 et-xmlfile==1.0.1  
