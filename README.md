@@ -1,15 +1,15 @@
+# 说明
 
-
-# 1.功能：
+## 1.功能：
 
 (1).根据关键词（街道、酒店或其他标志性建筑物等），查询周边的商户、酒店、交通位置等兴趣点  
 (2).使用PyQt5可视化选择抓取选项与抓取结果并可以对抓取结果进行动态编辑  
 (3).抓取结果导出为Excel表格  
 
-*2.Requirements* 
 
-**(1)requirements.txt**
-certifi==2017.7.27.1  
+## 2.requirements.txt（可以直接使用pip install requirements.txt安装）
+
+>certifi==2017.7.27.1  
 chardet==3.0.4  
 et-xmlfile==1.0.1  
 future==0.16.0  
@@ -26,7 +26,7 @@ QtPy==1.3.1
 requests==2.18.4  
 sip==4.19.3  
 six==1.11.0  
-urllib3==1.22  
+>urllib3==1.22  
 
 **(2)修正过的qtpandas **
 
