@@ -1,13 +1,12 @@
 
-**1.功能：**  
+*1.功能：*
 
 (1).根据关键词（街道、酒店或其他标志性建筑物等），查询周边的商户、酒店、交通位置等兴趣点  
 (2).使用PyQt5可视化选择抓取选项与抓取结果并可以对抓取结果进行动态编辑  
 (3).抓取结果导出为Excel表格  
 
-**2.Requirements**  
-
-(1)requirements.txt  
+*2.Requirements* 
+**(1)requirements.txt**
 certifi==2017.7.27.1  
 chardet==3.0.4  
 et-xmlfile==1.0.1  
@@ -27,11 +26,12 @@ sip==4.19.3
 six==1.11.0  
 urllib3==1.22  
 
-(2)修正过的qtpandas  
+**(2)修正过的qtpandas **
+
 qtpandas在github上的最新版本代码有问题，需要修正  
 请下载本项目下修正过的qtpandas代码安装  
 
-**3.使用说明**  
+*3.使用说明*
 (1)执行 python main.py，程序启动界面如下  
 ![Alt text](./resource/image/启动界面.jpg)
 
