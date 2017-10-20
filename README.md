@@ -7,10 +7,11 @@
 
 **2.Requirements**
 
-(1)pyhton3.5
-(2)pandas 0.20.3
-(3)PyQt5
-(4)修正过的qtpandas； 注：qtpandas在github上的最新版本代码有问题，需要修正，请下载本项目下修正过的qtpandas代码安装
+(1)pyhton3.5  
+(2)pandas 0.20.3  
+(3)PyQt5  
+(4)修正过的qtpandas； 注：qtpandas在github上的最新版本代码有问题，需要修正，请下载本项目下修正过的qtpandas代码安装  
+
 
 
 **3.使用说明**
