@@ -1,11 +1,20 @@
 # 说明
 
-## 1.功能：
-
-(1).根据关键词（街道、酒店或其他标志性建筑物等），查询周边的商户、酒店、交通位置等兴趣点  
+## 功能和项目文档结构：
+1.功能
+>(1).根据关键词（街道、酒店或其他标志性建筑物等），查询周边的商户、酒店、交通位置等兴趣点  
 (2).使用PyQt5可视化选择抓取选项与抓取结果并可以对抓取结果进行动态编辑  
-(3).抓取结果导出为Excel表格  
+>(3).抓取结果导出为Excel表格  
 
+2.项目结构
+>ChinaArea 中国省市数据    
+Crawler  爬虫程序目录  
+Mainwindow  PyQt5界面程序目录  
+resource  项目加载资源文件以及程序截图  
+venv  virtualenv 环境包  
+main.py  主程序  
+README.md  项目说明文档  
+>requirements.txt  
 
 ## 依赖库
 1.requirements.txt（可以直接使用pip install requirements.txt安装）
