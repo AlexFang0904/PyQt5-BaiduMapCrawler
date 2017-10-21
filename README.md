@@ -65,7 +65,7 @@ six==1.11.0
 1.执行 python main.py，程序启动界面如下  
 ![Alt text](./resource/image/启动界面.jpg)  
 
-2.选择省、市，然后输入关键词，这里以在四川省成都市 四川大学为例  
+2.选择省、市，然后输入关键词，例：四川省 成都市 天府广场 
 ![Alt text](./resource/image/run_main.gif)  
  
 
