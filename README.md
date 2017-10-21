@@ -16,12 +16,12 @@
 │   └── __init__.py  
 ├── main.py 主程序  
 ├── Mainwindow Ui界面文件  
-│   ├── __init__.py  
+│   ├── __init__.py  
 │   └── Mainwindow.py  
-├── qtpandas_1.0.4_v2 修正后的qtpandas安装包 
-├── README.md 项目文档说明
-├── requirements.txt 依赖包  
-└── resource 资源文件   
+├── qtpandas_1.0.4_v2 修正后的qtpandas安装包   
+├── README.md 项目文档说明  
+├── requirements.txt 依赖包    
+└── resource 资源文件  
     ├── image 界面加载图标以及程序运行截图  
     │   ├── run_main.gif  
     │   ├── spider2.png  
