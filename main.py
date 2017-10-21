@@ -27,8 +27,8 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
 
         '''初始化pandasqt'''
         widget = self.pandastablewidget
-        # widget.resize(600, 500)  # 如果对部件尺寸大小不满意可以在这里设置
-        self.model = DataFrameModel()  # 设置新的模型
+        # 设置qtpandas.DataFrameMode()
+        self.model = DataFrameModel()
         widget.setViewModel(self.model)
 
         # 初始化省份
@@ -53,12 +53,9 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
     # 初始化城市
     @pyqtSlot(int)
     def on_comboBox_prov_activated(self, index):
-        print('on_comboBox is running')
+        self.comboBox_city.addItem('请选择')
         key = int(self.comboBox_prov.itemData(index))
-        print(key)
         self.comboBox_city.clear()
-        # self.comboBox_city.addItem('请选择')
-        print(index, type(index))
         city_info_dict = cities_dict[key]
         for k, v in city_info_dict.items():
             self.comboBox_city.addItem(v, k)
