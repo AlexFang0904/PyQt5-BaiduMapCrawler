@@ -15,9 +15,9 @@
 │   ├── BaiduMapCrawler.py    
 │   └── __init__.py  
 ├── main.py 主程序  
-├── Mainwindow  Ui界面文件
+├── Mainwindow Ui界面文件  
 │   ├── __init__.py  
-│   └── Mainwindow.py 
+│   └── Mainwindow.py  
 ├── qtpandas_1.0.4_v2 修正后的qtpandas安装包 
 ├── README.md 项目文档说明
 ├── requirements.txt 依赖包  
