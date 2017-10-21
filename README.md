@@ -7,14 +7,33 @@
 >(3).抓取结果导出为Excel表格  
 
 2.项目结构
->ChinaArea 中国省市数据    
-Crawler  爬虫程序目录  
-Mainwindow  PyQt5界面程序目录  
-resource  项目加载资源文件以及程序截图  
-venv  virtualenv 环境包  
-main.py  主程序  
-README.md  项目说明文档  
->requirements.txt  
+>
+├── ChinaArea 全国省市数据  
+│   ├── China_area.py  
+│   └── __init__.py  
+├── Crawler 爬虫程序  
+│   ├── BaiduMapCrawler.py    
+│   └── __init__.py  
+├── main.py 主程序  
+├── Mainwindow  Ui界面文件
+│   ├── __init__.py  
+│   └── Mainwindow.py 
+├── qtpandas_1.0.4_v2 修正后的qtpandas安装包 
+├── README.md 项目文档说明
+├── requirements.txt 依赖包  
+└── resource 资源文件   
+    ├── image 界面加载图标以及程序运行截图  
+    │   ├── run_main.gif  
+    │   ├── spider2.png  
+    │   ├── spider3.png  
+    │   ├── spider.png  
+    │   ├── 导出结果界面.jpg  
+    │   ├── 启动界面.jpg    
+    │   ├── 抓取结果.jpg  
+    │   └── 抓取时界面.jpg  
+    └── QSS  
+        └── Mainwindow.qss  
+>
 
 ## 依赖库
 1.requirements.txt（可以直接使用pip install requirements.txt安装）
