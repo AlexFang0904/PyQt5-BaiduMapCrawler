@@ -42,7 +42,7 @@ six==1.11.0
 请下载本项目下修正过的qtpandas代码安装  
 >对应目录：qtpandas_1.0.4_v2
 
-## 3.使用说明
+## 使用说明
 1.执行 python main.py，程序启动界面如下  
 ![Alt text](./resource/image/启动界面.jpg)  
 
