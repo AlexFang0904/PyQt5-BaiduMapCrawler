@@ -7,9 +7,6 @@ import requests
 import json
 import openpyxl
 import os
-
-# import qdarkstyle
-
 import pandas as pd
 from pandas import DataFrame
 from qtpandas.models.DataFrameModel import DataFrameModel
@@ -24,9 +21,8 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(BaiduMapCrawler_main, self).__init__()
         self.setupUi(self)
-        self.setWindowTitle("百度地图数据采集软件_by_夜雨微寒")
+        self.setWindowTitle("百度地图数据采集工具_by_夜雨微寒")
         self.setWindowIcon(QtGui.QIcon(r'./resource/image/spider3.png'))
-        self.lineEdit_keyword.setText('海科名城')
         self.result = []
 
         '''初始化pandasqt'''
@@ -87,7 +83,7 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
     def display_poi_is_crawling(self, poi_str):
         # self.label_progress.setText(poi_str)
         print(poi_str)
-        df = DataFrame([poi_str], columns=['正在抓取', '所属城市'])
+        df = DataFrame([poi_str], columns=['正在抓取poi名称', '区域名'])
         print(df)
         self.model.setDataFrame(df)
 
