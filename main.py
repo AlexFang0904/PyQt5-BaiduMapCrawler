@@ -40,7 +40,6 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
     # 定义按下 开始抓取 按钮后的操作
     @pyqtSlot()
     def on_pushButton_crawl_clicked(self):
-        print('按下了 开始抓取')
         self.crawl()
 
     @pyqtSlot()
@@ -75,17 +74,14 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def show_crawl_progress(self, string):
         self.label_progress.setText(string)
-        # print(string)
 
     def display_poi_is_crawling(self, poi_str):
-        # self.label_progress.setText(poi_str)
         print(poi_str)
-        df = DataFrame([poi_str], columns=['正在抓取poi名称', '区域名'])
+        df = DataFrame([poi_str], columns=['正在抓取的poi名称', '所属区域'])
         print(df)
         self.model.setDataFrame(df)
 
     def crawl(self):
-        print('开始进行抓取程序实例化')
         keyword = self.lineEdit_keyword.text().strip()
         province = self.comboBox_prov.currentText()
         print(province)
@@ -97,7 +93,7 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
         # 获取百度地图城市代码
         try:
             citycode = city_code_dict[city]
-        except:
+        except BaseException:
             citycode = ''
         print(citycode)
         try:
@@ -135,8 +131,8 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
         print("抓取数据已经写入到本地！")
 
     def openFile(self):
-        DirName = QtWidgets.QFileDialog.getExistingDirectory(self.Filedialog, "浏览文件",
-                                                             "C:", QtWidgets.QFileDialog.ShowDirsOnly)
+        DirName = QtWidgets.QFileDialog.getExistingDirectory(
+            self.Filedialog, "浏览文件", "C:", QtWidgets.QFileDialog.ShowDirsOnly)
         self.DirlineEdit.setText(DirName)
 
     def saveFileToExcel(self):
@@ -150,10 +146,11 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
             print(fileName_path)
 
             if os.path.isfile(fileName_path):
-                existMessage = QtWidgets.QMessageBox.warning(self,
-                                                             '文件已存在',
-                                                             fileName + ' 已存在,是否覆盖该文件',
-                                                             QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+                existMessage = QtWidgets.QMessageBox.warning(
+                    self,
+                    '文件已存在',
+                    fileName + ' 已存在,是否覆盖该文件',
+                    QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
 
                 if existMessage == QtWidgets.QMessageBox.No:
                     return
@@ -161,8 +158,7 @@ class BaiduMapCrawler_main(QtWidgets.QMainWindow, Ui_MainWindow):
             df.to_excel(r'%s' % fileName_path, index=False)
             SucessMessage = QtWidgets.QMessageBox.information(self, '导出EXCEL', '导出成功', QtWidgets.QMessageBox.Yes)
 
-            if SucessMessage == QtWidgets.QMessageBox.Yes:
-                self.Filedialog.close()
+            if SucessMessage == QtWidgets.QMessageBox.Yes: self.Filedialog.close()
 
         except Exception as e:
             QtWidgets.QMessageBox.information(self, '导出失败', '%s' % e, QtWidgets.QMessageBox.Yes)
