@@ -38,7 +38,7 @@
 [![closed issues](https://img.shields.io/github/issues-closed/draperjames/qtpandas.svg)](https://github.com/draperjames/qtpandas/issues)
 
 ## Requirements;
-> Python 3.4 or greater    
+> Python 3.5 or greater    
 > Pthon 2.7 or greater     
 > PyQt4
 
@@ -53,20 +53,7 @@ pip install --upgrade git+https://github.com/robertlugg/easygui.git
 ```
 If that doesn't work then please [report an issue](https://github.com/draperjames/qtpandas/issues)
 
-To use, create a new Python script containing the following:
-```
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
 
-from qtpandas.views.CSVDialogs import CSVImportDialog
-
-if __name__ == "__main__":
-    from sys import argv, exit
-
-    app = QApplication(argv)
-    dialog = CSVImportDialog()
-    dialog.show()
-    app.exec_()
 ```
 # Examples
 
